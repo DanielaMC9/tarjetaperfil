@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated: hsl(229, 23%, 23%);
+    --dark-grayish: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+
+    --font-tipography:18px;
+}
+
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background: var(--dark-cyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+}   
+
+.card{
+    width: 330px;
+    min-height: 380px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 170px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.25);
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: 100% 140px;
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow: hidden;
+    padding: .1px;
+}
+
+.card_person{
+    width: 110px;
+    height: 110px;
+    background-image: url(images/image-victor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0  auto;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-top: 80px;
+}
+
+.card_name{
+    color: var(--very-dark-desaturated);
+    margin-top: 25px;
+    font-weight: 700;
+}
+
+.card_n{
+    margin-left: 8px;
+    color: var(--dark-gray);
+    font-weight: 400;
+}
+
+.card_country{
+    font-size: .8rem;
+    color: var(--dark-gray);
+    margin-top: 15px;
+}
+
+.card_media{
+    margin-top: 20px;
+    width: 100%;
+    height: 90%;
+    border-top: 1px solid var(--dark-gray);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card_media_info{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card_number{
+    width: 25%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: var(--very-dark-desaturated);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.card_info{
+    width: 25%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    font-size: .6rem;
+    color: var(--dark-gray);
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 1440px) {
+    .card{
+        width: 350px;
+    }
+}
